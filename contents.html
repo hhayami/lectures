@@ -1,0 +1,149 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang="ja">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>H.Hayami, Keio University</title>
+  <meta name="description" content="Keio University">
+  <meta name="publisher" content="Hitoshi Hayami">
+  <meta name="author" content="Hitoshi Hayami">
+  <meta name="copyright" content="Copyright &copy; Hitoshi Hayami">
+  <link rel="shortcut icon" href="./hitoshi.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="./hayami.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+$.fn.slideShow = function(config) {
+   var options = $.extend({
+      effect  : 'fade',
+      loop    : 'repaet',
+      timeout : 4000,
+      speed   : 4000
+   }, config);
+   return this.each(function() {
+      var current = 0;
+      var next = 1;
+      var photo = $(this).children();
+      $(photo).hide();
+      $('img', photo).hide();
+      $(photo[0]).show();
+      for (i=0; i < photo.length; i++) {
+         var src = [];
+         src[i] = $('img', photo[i]).attr('src');
+         $(photo[i]).css('background-image','url('+src[i]+')');
+      }
+      photoWidth();
+      $(window).resize(function() {
+         photoWidth();
+      });
+      function photoWidth() {
+         var windowWidth = $(window).width();
+         photo.css('width',545);
+      }
+      var change = function(){
+         if (options.effect == 'fade') {
+            $(photo[current]).fadeOut(options.speed);
+            $(photo[next]).fadeIn(options.speed);
+         } else if  (options.effect == 'slide') {
+            $(photo[current]).slideUp(options.speed);
+            $(photo[next]).slideDown(options.speed);
+         }
+         if (options.loop == 'repeat') {
+            if ((next + 1) < photo.length) {
+                current = next;
+                next++;
+            } else {
+                current = photo.length - 1;
+                next = 0;
+            }
+         }
+         if (options.loop == 'stop') {
+            if ((next + 1) < photo.length) {
+                current = next;
+                next++;
+            } else {
+                return;
+            }
+         }
+      };
+      var timer = setInterval(function(){change();}, options.timeout);
+   });
+};
+$(function() {
+   $('#slideshow ul').slideShow({effect : 'fade',loop : 'repeat',timeout: 4000,speed : 4000});
+});
+</script>
+</head>
+<body onload="document.body.style.zoom = screen.logicalXDPI/screen.deviceXDPI;";>
+<div class="themesPrimary">
+<ul class="pulldown_menu">
+   <li><a href="./2023/hiyoshi.html"><b>日吉</b></a>
+     <ul class="pulldown_menu">
+     <li><br></li>
+     <li><br></li>
+     <li><br></li>
+     </ul>
+   </li>
+<!--
+     <li>月曜日 3限 J29 </li>
+     <li><a href="./2023/stat23.html"> 統計学 (旧学則:統計学II)(春)</a></li>
+     <li><br></li>
+     <li><br></li>
+     <li><br></li>
+-->
+   <li><a href="./2023/mita.html"><b>三田</b></a>
+     <ul class="pulldown_menu">
+     <li>月曜日 4限 533</li>
+     <li><a href="./2023/stat_econ.html"> 経済と統計学の系譜(秋)</a></li>
+     <li>水曜日 2限 南校舎ホール</li>
+     <li><a href="./2023/ims_autumn.html"> 統計的推論(秋)</a></li>
+     <li>水曜日 4-5限 512教室</li>
+     <li><a href="./seminar.html">研究会</a></li>
+     <li><br></li>
+     </ul>
+   </li>
+   <li><a href="./2023/grad.html"><b>商学研究科</b></a>
+     <ul class="pulldown_menu">
+     <li>火曜日 3限 353-B</li>
+     <li><a href="./2023/grad_stat.html"> 計量経済学合同演習 (秋)</a></li>
+<!--
+     <li>火曜日 2限 353-B</li>
+     <li><a href="./2023/grad_stat.html"> 産業連関論特論 (秋)</a></li>
+-->
+     <li>水曜日 2限 南校舎ホール</li>
+     <li><a href="./2023/ims_autumn.html"> 統計解析 (秋)</a></li>
+<!--
+     <li>水曜日 2限 531</li>
+     <li><a href="./2023/ims_spring.html"> 数理統計統計基礎(春)</a></li>
+     <li>水曜日 2限 531</li>
+     <li><a href="./2023/ims_spring.html"> 統計学基礎理論 (春)</a></li>
+     <li>水曜日 3限 355-B</li>
+     <li><a href="./2023/grad_autumn.html"> 計量経済学演習/統計学特殊演習 (秋)</a></li>
+     <li><br></li>
+     <li><br></li>
+     <li><br></li>
+-->
+     </ul>
+   </li>
+</ul>
+<table align="center" class="infoItem">
+  <tr>
+    <td align="center"><a href="./contents.html">
+       <img src="./fig/Hiyoshi.jpg" alt="Hiyoshi Statistics" height="125"></a>
+    </td>
+    <td align="center"><a href="./contents.html">
+       <img src="./fig/Keio_march02a.jpg" alt="Mita" height="125"></a>
+    </td>
+    <td align="center"><a href="./contents.html">
+       <img src="./fig/Keio_march03a.jpg" alt="Graduate School" height="125"></a>
+    </td>
+  </tr>
+</table>
+</div>
+<div id="slideshow">
+   <ul>
+      <li><img src="./fig/2023/2023_mar_01.jpg" alt=""></li>
+      <li><img src="./fig/2023/2023_mar_02.jpg" alt=""></li>
+      <li><img src="./fig/2023/2023_mar_03.jpg" alt=""></li>
+      <li><img src="./fig/2023/2023_mar_04.jpg" alt=""></li>
+   </ul>
+</div>
+</body>
+</html>

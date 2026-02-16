@@ -1,0 +1,178 @@
+<style type="text/css">
+html{background-color: #F0FFF0;}
+body{line-height: 120% ; font-size: 14px; margin-top: 5px; margin-bottom: 5px; float: left; background-color: #F0FFF0; background-position: 0px 145px;} 
+h1{font-size:180%;font-weight:normal; color: #a0423f;}
+h2{font-size: 120%; color: #FF3a5a;font-style: oblique;}
+h3{font-size: 110%; color: #FF3a5a;}
+h4{font-size: small;font-weight:800; color: #a0423f; font-style: oblique}
+h5{font-size: small;font-weight:normal; color: #a0423f; font-family: "ＭＳ Ｐゴシック",sans-serif }
+h6{font-size: x-small; color: #cc3a5a; font-family: "ＭＳ Ｐゴシック",sans-serif }
+h7{font-size: x-small; color: #a0423f; font-family: "ＭＳ Ｐゴシック",sans-serif }
+img{border:0;}
+li{list-style:none;}
+p{font-size: x-small; color: #000000;}
+sup{vertical-align:super; color:#ff1493;}
+
+.header {position: relative; line-height: 120% ; font-size: 12px; margin-top: 3px; margin-bottom: 0px; float: left; background: #F0FFF0;}
+.header .headerPhoto {line-height: 100% ; left: 5px;}
+.header .headerBrandingA {font-size: 20px; color: #a0423f;font-weight:800; margin-left: 20px; margin-top: 25px;}
+.header .headerBrandingB {font-size: 180%; color: #a0423f;font-weight:800; margin-left: 20px; margin-top: 25px; background: #F0FFF0 ; }
+.site_guide {line-height: 120% ; font-size: 12px; margin-top: 5px; margin-bottom: 5px; float: right; background: #F0FFF0 ; }
+.site_guide .headerLink {line-height: 100% ; right: 5px ; float: right;}
+
+ul.pulldown_menu ul {
+display: none; /* 通常は表示しない */
+}
+ul.pulldown_menu li:hover > ul {
+display: block; /* マウスが乗ったら表示する */
+}
+ul.pulldown_menu {
+list-style: none; /* 先頭記号を消す */
+padding-left: 0px; 
+text-align: center; /* 文字を中央合わせに */
+height:18px
+}
+ul.pulldown_menu li {
+float: left; /* リスト項目を横方向に並べる */
+width: 180px; /* リスト項目の幅 */
+padding-left: 0px; 
+padding-right: 0px; 
+text-align: center; /* 文字を中央合わせに */
+font-size: 15px;
+font-family:'Verdana', 'Tahoma', 'Century Gothic' ;
+color: 'red'
+}
+ul.pulldown_menu ul {
+list-style: none; /* 2段目の先頭記号を消す */
+padding-left: 0px; /* 2段目の左位置を1段目に揃える */
+}
+ul.pulldown_menu a {
+display: block; /* ブロックレベルに */
+text-align: center; /* 文字を中央合わせに */
+padding: 5px; /* 内部の余白 */
+text-decoration: none; /* 下線を消す */
+outline: none; /* 選択時の点線枠線を消す */
+border-radius: 8px 8px 0px 0px; /* タブに丸みをつける */
+background-color: #F0FFF0; /* 背景色 */
+background: url(image/gradation_green.bmp); /* 通常の背景画像 */
+height: 15px; /* 高さの調整 */
+}
+ul.pulldown_menu ul li {
+font-size: 12px;
+font-family: 'Century Gothic';
+}
+ul.pulldown_menu ul a {
+border-radius: 0px; /* 2段目以降はタブに丸みをつけない */
+background-color: #F0FFF0; /* 背景色 */
+background: url(image/gradation_green2.jpg); /* ２段目以降の背景画像 */
+color: blue; /* 文字色 */
+}
+ul.pulldown_menu a:hover {/* マウスカーソルが乗っている状態 */
+background-color: #F0FFF0; /* 背景色 */
+background: url(image/gradation_green_R.bmp); /* 通常とは違う背景画像 */
+color: red; /* 文字色 */
+}
+ul.pulldown_menu a:active {/* マウスがクリックされている状態 */
+background-color: #F0FFF0; /* 背景色 */
+background: url(image/gradation_green_R.bmp); /* 通常とは違う背景画像 */
+color: purple; /* 文字色 */
+}
+
+.footer {position: relative; line-height: 100%; font-size: 8px; margin-top: 0px; margin-bottom: 0px; float: right; background: #F0FFF0; }
+.footer .footerLink {text-align: right; width=550px; color: #a0423f}
+.footer .infoItem p {margin:5px; color: #000000; font-size: 8px; float: left;}
+
+#footer p{background: #F0FFF0}
+#footerLink p{background: #F0FFF0}
+#footerLink h7{font-size: x-small; color: #a0423f; font-family: "ＭＳ Ｐゴシック",sans-serif }
+
+#information {line-height: 120% ; font-size: 14px; margin-top: 5px; margin-left: 15px; margin-bottom: 5px; float: left; background: #F0FFF0;}
+#information li{list-style: circle;}
+
+#lecture {line-height: 120% ; font-size: 12px; margin-top: 5px; margin-left: 10px; margin-bottom: 5px; width: 530px; float: left; background: #F0FFF0 ;}
+#lecture p{font-size: small;
+   color: #cc3a5a;
+   font-family: "ＭＳ Ｐゴシック",sans-serif }
+#lecture li{list-style: circle;font-size: small;}
+#lecture td{style="font-size: 10px";}
+
+.themesPrimary {position: relative; margin: 0 0 0 0;}
+.themesPrimary .infoItem {margin-top: 7px; margin-right: 3px;  margin-left: 3px; float: left;}
+.themesPrimary .infoItem h5 {margin:3px; color: rgba(139,0,0,1); background-color : rgba(245, 222, 179, 0.5); width: 145px; font-size: 14px; }
+.themesPrimary .infoItem p {margin:3px; color: rgba(139,69,19,1); font-size: 14px; }
+.themesPrimary .infoItem a {margin:3px; color: blue; background-color : rgba(245, 222, 179, 0.3);}
+.themesPrimary .infoItem h3 a {margin: 3px; font-size: medium; font-weight: bold; background: #f5deb3;}
+
+.photo {background: #000000; color: #bdff7c;}
+
+#slideshow {
+  position:relative;
+}
+#slideshow li {
+   position:absolute;
+   width: 480px;
+   height:367px; /*  width=550 height=367 = 700/467 */
+   top: 138px; /* top 138 best size */
+   left:  10;
+   margin:0;
+   padding:0;
+   background-position: center top;
+   background-repeat:no-repeat;
+}
+
+#seminar{line-height: 120% ; font-size: 14px; margin-top: 5px; margin-left: 15px; margin-bottom: 5px; float: left; background: #FFFFCC; color: #000000;}
+#seminar h1{font-size: xx-large;
+   color: #a0423f;
+   font-family: "HGS創英角ﾎﾟｯﾌﾟ体", "Comic Sans MS"; 
+   font-style: oblique}
+#seminar h2{font-size: large;
+   color: #cc3a5a;
+   font-family: "HGS創英角ﾎﾟｯﾌﾟ体", "Comic Sans MS"; 
+   font-style: oblique}
+#seminar h3{font-size: large;
+   color: #003a5a;
+   font-family: "HGS創英角ﾎﾟｯﾌﾟ体", "Comic Sans MS"; 
+   font-style: oblique}
+#seminar h4{font-size: medium;
+   color: #a0423f;
+   font-family: "HGS創英角ﾎﾟｯﾌﾟ体", "Comic Sans MS"; 
+   font-style: oblique}
+#seminar h5{font-size: small;
+   color: #cc3a5a;
+   font-family: "ＭＳ Ｐゴシック",sans-serif }
+#seminar h6{font-size: x-small;
+   color: #cc3a5a;
+   font-family: "ＭＳ Ｐゴシック",sans-serif }
+#seminar p{font-size: small;
+  color: #000000;
+  font-family: "ＭＳ Ｐゴシック"}
+
+#course{line-height: 120% ; font-size: 14px; font-family: "arial"; margin-top: 5px; margin-left: 15px; margin-bottom: 5px; float: left; background: #FFFFCC; color: #000000;}
+#course h1{font-size: xx-large;
+   color: #a0423f;
+   font-family: "Century Gothic"
+   font-style: oblique}
+#course h2{font-size: large;
+   color: #cc3a5a;
+   font-family: "Century Gothic"; 
+   font-style: oblique}
+#course h3{font-size: large;
+   color: #003a5a;
+   font-family: "Century Gothic"; 
+   font-style: oblique}
+#course h4{font-size: medium;
+   color: #a0423f;
+   font-family: "Century Gothic"; 
+   font-style: oblique}
+#course h5{font-size: small;
+   color: #cc3a5a;
+   font-family: "Century Gothic"; }
+#course h6{font-size: x-small;
+   color: #cc3a5a;
+   font-family: "Century Gothic"; }
+#course p{font-size: small;
+  color: #000000;
+  font-family: "arial"}
+#course li{list-style: circle;} 
+#course td{font-size: small; font-family: "arial"} 
+</style>
