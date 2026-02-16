@@ -1,0 +1,29 @@
+body{background: #000b;
+     color: #000000}
+h1{font-size: xx-large;
+   color: #a0423f;
+   font-family: "HGS‘n‰pŠpÎß¯Ìß‘Ì", "Comic Sans MS"; 
+   font-style: oblique}
+h2{font-size: large;
+   color: #cc3a5a;
+   font-family: "HGS‘n‰pŠpÎß¯Ìß‘Ì", "Comic Sans MS"; 
+   font-style: oblique}
+h3{font-size: large;
+   color: #003a5a;
+   font-family: "HGS‘n‰pŠpÎß¯Ìß‘Ì", "Comic Sans MS"; 
+   font-style: oblique}
+h4{font-size: medium;
+   color: #a0423f;
+   font-family: "HGS‘n‰pŠpÎß¯Ìß‘Ì", "Comic Sans MS"; 
+   font-style: oblique}
+h5{font-size: small;
+   color: #cc3a5a;
+   font-family: "‚l‚r ‚oƒSƒVƒbƒN",sans-serif }
+h6{font-size: x-small;
+   color: #cc3a5a;
+   font-family: "‚l‚r ‚oƒSƒVƒbƒN",sans-serif }
+p{font-size: small;
+  color: #000000;
+  font-family: "‚l‚r ‚oƒSƒVƒbƒN"}
+#header {text-align: left; font-size: 8pt}
+#footer {text-align: right; font-size: 8pt}
